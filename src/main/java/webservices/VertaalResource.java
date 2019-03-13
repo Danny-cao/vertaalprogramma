@@ -22,6 +22,7 @@ public class VertaalResource {
 	@GET
     @Produces("application/json")
     public Response testGet(){
+		
     	String zin = "test";
         return Response.ok(zin).build();
 	}

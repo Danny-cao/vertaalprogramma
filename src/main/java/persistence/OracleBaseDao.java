@@ -5,9 +5,9 @@ import java.sql.*;
 public class OracleBaseDao {
 
     private static final String DB_DRIV = "oracle.jdbc.driver.OracleDriver";
-    private static final String DB_URL = "";
-    private static final String DB_USER = "";
-    private static final String DB_PASS = "";
+    private static final String DB_URL = "jdbc:oracle:thin:@//localhost:1521/oracledb";
+    private static final String DB_USER = "danny";
+    private static final String DB_PASS = "1234";
 
     public Connection getConnection() throws SQLException {
         try {
