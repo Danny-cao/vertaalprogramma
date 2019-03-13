@@ -13,10 +13,10 @@ public class VertaalResource {
 
 	@POST
     @Produces("application/json")
-    public Response translateSentence(@FormParam("zin") String zin){
+    public Response translateSentence(@FormParam("sentence") String sentence){
     	
-    	System.out.println(zin);
-        return Response.ok(zin).build();
+    	System.out.println(sentence);
+        return Response.ok(sentence).build();
 	}
 	
 	@GET
