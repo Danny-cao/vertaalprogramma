@@ -7,6 +7,10 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.Response;
 
+import model.Lidwoord;
+import persistence.LidwoordDao;
+import persistence.LidwoordDaoImpl;
+
 @Path("/vertaal")
 public class VertaalResource {
 	
@@ -23,8 +27,13 @@ public class VertaalResource {
     @Produces("application/json")
     public Response testGet(){
 		
-    	String zin = "test";
-        return Response.ok(zin).build();
+		String nederlands = "de";
+		
+		LidwoordDao lidwoordDao = new LidwoordDaoImpl();
+		Lidwoord lidwoord = lidwoordDao.findTranslation(nederlands);
+		
+    	System.out.println(lidwoord);
+        return Response.ok(lidwoord).build();
 	}
 	
 	

@@ -2,6 +2,7 @@ package persistence;
 
 import java.sql.*;
 
+
 public class OracleBaseDao {
 
     private static final String DB_DRIV = "oracle.jdbc.driver.OracleDriver";

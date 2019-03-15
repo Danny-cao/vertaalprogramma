@@ -24,7 +24,7 @@ public class LidwoordDaoImpl extends OracleBaseDao implements LidwoordDao{
 	@Override
 	public Lidwoord findTranslation(String nederlands) {
 		try {
-            String queryText =  "SELECT * " +
+            String queryText =  "SELECT engels " +
                     "FROM LIDWOORD " +
                     "WHERE NEDERLANDS = ?";
 
