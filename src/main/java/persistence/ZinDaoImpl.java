@@ -19,7 +19,13 @@ public class ZinDaoImpl extends OracleBaseDao implements ZinDao{
 		String woord4 = woorden[3];
 		String woord5 = woorden[4];
 		
-		if(ldao.exist(woord1) && wdao.exist(woord2) && zdao.exist(woord3) && ldao.exist(woord4) && wdao.exist(woord5)) {
+		System.out.println(woord1 + "-" + woord2 + "-" + woord3 + "-" + woord4 +"-" + woord5);
+		System.out.println(ldao.exist(woord1));
+		System.out.println(zdao.exist(woord2));
+		System.out.println(wdao.exist(woord3));
+		System.out.println(ldao.exist(woord4));
+		System.out.println(zdao.exist(woord5));
+		if(ldao.exist(woord1) && zdao.exist(woord2) && wdao.exist(woord3) && ldao.exist(woord4) && zdao.exist(woord5)) {
 			return true;
 		}
 		
@@ -29,7 +35,6 @@ public class ZinDaoImpl extends OracleBaseDao implements ZinDao{
 	@Override
 	public String Representatie1(String zin) {
 		if(checkZin(zin) == true) {
-			// structuur
 			return zin;
 		} else {
 			return "zin klopt niet";
@@ -43,10 +48,10 @@ public class ZinDaoImpl extends OracleBaseDao implements ZinDao{
 			String[] woorden = zin.split(" ");
 			
 			String woord1 = ldao.findTranslation(woorden[0]);
-			String woord2 = wdao.findTranslation(woorden[1]);
-			String woord3 = zdao.findTranslation(woorden[2]);
+			String woord2 = zdao.findTranslation(woorden[1]);
+			String woord3 = wdao.findTranslation(woorden[2]);
 			String woord4 = ldao.findTranslation(woorden[3]);
-			String woord5 = wdao.findTranslation(woorden[4]);
+			String woord5 = zdao.findTranslation(woorden[4]);
 			
 			String vertaling = woord1 + " " + woord2 + " " + woord3 + " " + woord4 + " " + woord5;
 			
@@ -61,12 +66,105 @@ public class ZinDaoImpl extends OracleBaseDao implements ZinDao{
 		if(checkZin(zin) == true) {
 			String[] woorden = zin.split(" ");
 			
-			String woord1 = wdao.findTranslation(woorden[1]);
-			String woord2 = zdao.findTranslation(woorden[2]);
-			String woord3 = wdao.findTranslation(woorden[4]);
+			String woord1 = zdao.findTranslation(woorden[1]);
+			String woord2 = wdao.findTranslation(woorden[2]);
+			String woord3 = zdao.findTranslation(woorden[4]);
 			
-			// switch return https image
+			if(woord1.equals("brood") && woord2.equals("laat") && woord3.equals("brood")) {
+				
+			}else if(woord1.equals("brood") && woord2.equals("laat") && woord3.equals("man")){
+				
+			}else if(woord1.equals("brood") && woord2.equals("laat") && woord3.equals("boer")){
+				
+			}
 			
+			else if(woord1.equals("brood") && woord2.equals("eet") && woord3.equals("brood")){
+				
+			}else if(woord1.equals("brood") && woord2.equals("eet") && woord3.equals("man")){
+				
+			}else if(woord1.equals("brood") && woord2.equals("eet") && woord3.equals("boer")){
+				
+			}
+			
+			else if(woord1.equals("brood") && woord2.equals("koopt") && woord3.equals("brood")){
+				
+			}else if(woord1.equals("brood") && woord2.equals("koopt") && woord3.equals("man")){
+				
+			}else if(woord1.equals("brood") && woord2.equals("koopt") && woord3.equals("boer")){
+				
+			}
+			
+			else if(woord1.equals("brood") && woord2.equals("snijdt") && woord3.equals("brood")){
+				
+			}else if(woord1.equals("brood") && woord2.equals("snijdt") && woord3.equals("man")){
+				
+			}else if(woord1.equals("brood") && woord2.equals("snijdt") && woord3.equals("boer")){
+				
+			}
+			
+			else if(woord1.equals("man") && woord2.equals("laat") && woord3.equals("brood")){
+				
+			}else if(woord1.equals("man") && woord2.equals("laat") && woord3.equals("man")){
+				
+			}else if(woord1.equals("man") && woord2.equals("laat") && woord3.equals("boer")){
+				
+			}
+			
+			else if(woord1.equals("man") && woord2.equals("eet") && woord3.equals("brood")){
+				
+			}else if(woord1.equals("man") && woord2.equals("eet") && woord3.equals("man")){
+				
+			}else if(woord1.equals("man") && woord2.equals("eet") && woord3.equals("boer")){
+				
+			}
+			
+			else if(woord1.equals("man") && woord2.equals("koopt") && woord3.equals("brood")){
+				
+			}else if(woord1.equals("man") && woord2.equals("koopt") && woord3.equals("man")){
+				
+			}else if(woord1.equals("man") && woord2.equals("koopt") && woord3.equals("boer")){
+				
+			}
+			
+			else if(woord1.equals("man") && woord2.equals("snijdt") && woord3.equals("brood")){
+				
+			}else if(woord1.equals("man") && woord2.equals("snijdt") && woord3.equals("man")){
+				
+			}else if(woord1.equals("man") && woord2.equals("snijdt") && woord3.equals("boer")){
+				
+			}
+			
+			else if(woord1.equals("boer") && woord2.equals("laat") && woord3.equals("brood")){
+				
+			}else if(woord1.equals("boer") && woord2.equals("laat") && woord3.equals("man")){
+				
+			}else if(woord1.equals("boer") && woord2.equals("laat") && woord3.equals("boer")){
+				
+			}
+			
+			else if(woord1.equals("boer") && woord2.equals("eet") && woord3.equals("brood")){
+				
+			}else if(woord1.equals("boer") && woord2.equals("eet") && woord3.equals("man")){
+				
+			}else if(woord1.equals("boer") && woord2.equals("eet") && woord3.equals("boer")){
+				
+			}
+			
+			else if(woord1.equals("boer") && woord2.equals("koopt") && woord3.equals("brood")){
+				
+			}else if(woord1.equals("boer") && woord2.equals("koopt") && woord3.equals("man")){
+				
+			}else if(woord1.equals("boer") && woord2.equals("koopt") && woord3.equals("boer")){
+				
+			}
+			
+			else if(woord1.equals("boer") && woord2.equals("snijdt") && woord3.equals("brood")){
+				
+			}else if(woord1.equals("boer") && woord2.equals("snijdt") && woord3.equals("man")){
+				
+			}else if(woord1.equals("boer") && woord2.equals("snijdt") && woord3.equals("boer")){
+				
+			}
 			
 			return zin;
 		} else {
