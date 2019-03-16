@@ -30,10 +30,13 @@ public class VertaalResource {
 		String nederlands = "de";
 		
 		LidwoordDao lidwoordDao = new LidwoordDaoImpl();
-		Lidwoord lidwoord = lidwoordDao.findTranslation(nederlands);
 		
-    	System.out.println(lidwoord);
-        return Response.ok(lidwoord).build();
+		//Lidwoord lidwoord = lidwoordDao.findTranslation(nederlands);
+		boolean test = lidwoordDao.exist("op");
+		
+		
+    	//System.out.println(lidwoord);
+        return Response.ok(test).build();
 	}
 	
 	
