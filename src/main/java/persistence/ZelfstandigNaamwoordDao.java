@@ -5,6 +5,6 @@ import model.ZelfstandigNaamwoord;
 public interface ZelfstandigNaamwoordDao {
 
 	boolean exist(String nederlands);
-	ZelfstandigNaamwoord findTranslation(String nederlands);
+	String findTranslation(String nederlands);
 
 }

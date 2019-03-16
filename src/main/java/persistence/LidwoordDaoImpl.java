@@ -22,7 +22,7 @@ public class LidwoordDaoImpl extends OracleBaseDao implements LidwoordDao{
     }
 
 	@Override
-	public Lidwoord findTranslation(String nederlands) {
+	public String findTranslation(String nederlands) {
 		try {
             String queryText =  "SELECT engels " +
                     "FROM LIDWOORD " +
@@ -35,7 +35,7 @@ public class LidwoordDaoImpl extends OracleBaseDao implements LidwoordDao{
             result.next();
             String engels = result.getString("engels");
 
-            return new Lidwoord(nederlands, engels);
+            return engels;
 
         } catch (SQLException e) {
             e.printStackTrace();

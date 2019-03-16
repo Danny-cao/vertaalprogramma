@@ -11,7 +11,7 @@ public class ZelfstandigNaamwoordDaoImpl extends OracleBaseDao implements Zelfst
 	}
 
 	@Override
-	public ZelfstandigNaamwoord findTranslation(String nederlands) {
+	public String findTranslation(String nederlands) {
 		// TODO Auto-generated method stub
 		return null;
 	}
