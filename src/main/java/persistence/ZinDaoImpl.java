@@ -11,25 +11,32 @@ public class ZinDaoImpl extends OracleBaseDao implements ZinDao{
 	@Override
 	public boolean checkZin(String zin) {
 		
-		String[] woorden = zin.split(" ");
-		
-		String woord1 = woorden[0];
-		String woord2 = woorden[1];
-		String woord3 = woorden[2];
-		String woord4 = woorden[3];
-		String woord5 = woorden[4];
-		
-		System.out.println(woord1 + "-" + woord2 + "-" + woord3 + "-" + woord4 +"-" + woord5);
-		System.out.println(ldao.exist(woord1));
-		System.out.println(zdao.exist(woord2));
-		System.out.println(wdao.exist(woord3));
-		System.out.println(ldao.exist(woord4));
-		System.out.println(zdao.exist(woord5));
-		if(ldao.exist(woord1) && zdao.exist(woord2) && wdao.exist(woord3) && ldao.exist(woord4) && zdao.exist(woord5)) {
-			return true;
+		try {
+			String[] woorden = zin.split(" ");
+			
+			String woord1 = woorden[0];
+			String woord2 = woorden[1];
+			String woord3 = woorden[2];
+			String woord4 = woorden[3];
+			String woord5 = woorden[4];
+			
+			System.out.println(woord1 + "-" + woord2 + "-" + woord3 + "-" + woord4 +"-" + woord5);
+			System.out.println(ldao.exist(woord1));
+			System.out.println(zdao.exist(woord2));
+			System.out.println(wdao.exist(woord3));
+			System.out.println(ldao.exist(woord4));
+			System.out.println(zdao.exist(woord5));
+			if(ldao.exist(woord1) && zdao.exist(woord2) && wdao.exist(woord3) && ldao.exist(woord4) && zdao.exist(woord5)) {
+				return true;
+			}
+			
+			return false;
+		}catch(Exception e) {
+			return false;
 		}
+
 		
-		return false;
+
 	}
 
 	@Override

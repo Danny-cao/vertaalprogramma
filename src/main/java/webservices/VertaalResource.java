@@ -30,15 +30,15 @@ public class VertaalResource {
     public Response testGet(){
 		
 		String nederlands = "de";
-		String test = "de boer eet een brood";
+		String test = "de brood eet een man";
 		
 		LidwoordDao lidwoordDao = new LidwoordDaoImpl();
 		ZinDao zdao = new ZinDaoImpl();
 		
 		//Lidwoord lidwoord = lidwoordDao.findTranslation(nederlands);
-		//String zin = zdao.Representatie2(test);
+		String zin = zdao.Representatie2(test);
 		//boolean test = lidwoordDao.exist("op");
-		String zin = zdao.Representatie1(test);
+		//String zin = zdao.Representatie1(test);
 		
 		
     	//System.out.println(lidwoord);
