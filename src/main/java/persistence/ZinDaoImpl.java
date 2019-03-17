@@ -104,99 +104,103 @@ public class ZinDaoImpl extends OracleBaseDao implements ZinDao{
 			System.out.println(woord3);
 			
 			if(woord1.equals("brood") && woord2.equals("laat") && woord3.equals("brood")) {
-				
+				return "https://media.gettyimages.com/photos/farmer-eats-an-apple-as-farmers-give-food-away-to-protest-against-the-picture-id454677048";
 			}else if(woord1.equals("brood") && woord2.equals("laat") && woord3.equals("man")){
+				return "https://media.gettyimages.com/photos/farmer-eats-an-apple-as-farmers-give-food-away-to-protest-against-the-picture-id454677048";
 				
 			}else if(woord1.equals("brood") && woord2.equals("laat") && woord3.equals("boer")){
+				return "https://media.gettyimages.com/photos/farmer-eats-an-apple-as-farmers-give-food-away-to-protest-against-the-picture-id454677048";
 				
 			}
 			
 			else if(woord1.equals("brood") && woord2.equals("eet") && woord3.equals("brood")){
-				
+				return "https://comps.canstockphoto.com/man-eats-bread-on-a-white-background-stock-photos_csp43993431.jpg";
 			}else if(woord1.equals("brood") && woord2.equals("eet") && woord3.equals("man")){
-				
+				return "https://comps.canstockphoto.com/man-eats-bread-on-a-white-background-stock-photos_csp43993431.jpg";	
 			}else if(woord1.equals("brood") && woord2.equals("eet") && woord3.equals("boer")){
-				
+				return "https://comps.canstockphoto.com/man-eats-bread-on-a-white-background-stock-photos_csp43993431.jpg";
 			}
 			
 			else if(woord1.equals("brood") && woord2.equals("koopt") && woord3.equals("brood")){
-				
+				return "https://c8.alamy.com/comp/KM9D0G/a-man-buys-artisan-bread-from-a-stall-at-the-award-winning-stroud-KM9D0G.jpg";
 			}else if(woord1.equals("brood") && woord2.equals("koopt") && woord3.equals("man")){
-				
+				return "https://c8.alamy.com/comp/KM9D0G/a-man-buys-artisan-bread-from-a-stall-at-the-award-winning-stroud-KM9D0G.jpg";
 			}else if(woord1.equals("brood") && woord2.equals("koopt") && woord3.equals("boer")){
-				
+				return "https://c8.alamy.com/comp/KM9D0G/a-man-buys-artisan-bread-from-a-stall-at-the-award-winning-stroud-KM9D0G.jpg";
 			}
 			
 			else if(woord1.equals("brood") && woord2.equals("snijdt") && woord3.equals("brood")){
-				
+				return "https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fthumbs.dreamstime.com%2Fz%2Ffarmer-cut-bread-knife-male-hands-slicing-homemade-harvest-time-58469722.jpg&f=1";
 			}else if(woord1.equals("brood") && woord2.equals("snijdt") && woord3.equals("man")){
-				
+				return "https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fthumbs.dreamstime.com%2Fz%2Ffarmer-cut-bread-knife-male-hands-slicing-homemade-harvest-time-58469722.jpg&f=1";
 			}else if(woord1.equals("brood") && woord2.equals("snijdt") && woord3.equals("boer")){
-				
+				return "https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fthumbs.dreamstime.com%2Fz%2Ffarmer-cut-bread-knife-male-hands-slicing-homemade-harvest-time-58469722.jpg&f=1";
 			}
 			
 			else if(woord1.equals("man") && woord2.equals("laat") && woord3.equals("brood")){
-				
+				return "https://media.gettyimages.com/photos/farmer-eats-an-apple-as-farmers-give-food-away-to-protest-against-the-picture-id454677048";
 			}else if(woord1.equals("man") && woord2.equals("laat") && woord3.equals("man")){
-				
+				return "https://media.gettyimages.com/photos/farmer-eats-an-apple-as-farmers-give-food-away-to-protest-against-the-picture-id454677048";
 			}else if(woord1.equals("man") && woord2.equals("laat") && woord3.equals("boer")){
-				
+				return "https://media.gettyimages.com/photos/farmer-eats-an-apple-as-farmers-give-food-away-to-protest-against-the-picture-id454677048";
 			}
 			
 			else if(woord1.equals("man") && woord2.equals("eet") && woord3.equals("brood")){
-				
+				return "https://media.gettyimages.com/photos/farmer-eats-an-apple-as-farmers-give-food-away-to-protest-against-the-picture-id454677048";
 			}else if(woord1.equals("man") && woord2.equals("eet") && woord3.equals("man")){
-				
+				return "https://media.gettyimages.com/photos/farmer-eats-an-apple-as-farmers-give-food-away-to-protest-against-the-picture-id454677048";
 			}else if(woord1.equals("man") && woord2.equals("eet") && woord3.equals("boer")){
-				
+				return "https://media.gettyimages.com/photos/farmer-eats-an-apple-as-farmers-give-food-away-to-protest-against-the-picture-id454677048";
 			}
 			
 			else if(woord1.equals("man") && woord2.equals("koopt") && woord3.equals("brood")){
-				
+				return "https://c8.alamy.com/comp/KM9D0G/a-man-buys-artisan-bread-from-a-stall-at-the-award-winning-stroud-KM9D0G.jpg";
 			}else if(woord1.equals("man") && woord2.equals("koopt") && woord3.equals("man")){
-				
+				return "https://c8.alamy.com/comp/KM9D0G/a-man-buys-artisan-bread-from-a-stall-at-the-award-winning-stroud-KM9D0G.jpg";
 			}else if(woord1.equals("man") && woord2.equals("koopt") && woord3.equals("boer")){
-				
+				return "https://c8.alamy.com/comp/KM9D0G/a-man-buys-artisan-bread-from-a-stall-at-the-award-winning-stroud-KM9D0G.jpg";
 			}
 			
 			else if(woord1.equals("man") && woord2.equals("snijdt") && woord3.equals("brood")){
-				
+				return "https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fthumbs.dreamstime.com%2Fz%2Ffarmer-cut-bread-knife-male-hands-slicing-homemade-harvest-time-58469722.jpg&f=1";
 			}else if(woord1.equals("man") && woord2.equals("snijdt") && woord3.equals("man")){
-				
+				return "https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fthumbs.dreamstime.com%2Fz%2Ffarmer-cut-bread-knife-male-hands-slicing-homemade-harvest-time-58469722.jpg&f=1";
 			}else if(woord1.equals("man") && woord2.equals("snijdt") && woord3.equals("boer")){
-				
+				return "https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fthumbs.dreamstime.com%2Fz%2Ffarmer-cut-bread-knife-male-hands-slicing-homemade-harvest-time-58469722.jpg&f=1";
 			}
 			
 			else if(woord1.equals("boer") && woord2.equals("laat") && woord3.equals("brood")){
-				
+				return "https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fthumbs.dreamstime.com%2Fz%2Ffarmer-cut-bread-knife-male-hands-slicing-homemade-harvest-time-58469722.jpg&f=1";
 			}else if(woord1.equals("boer") && woord2.equals("laat") && woord3.equals("man")){
-				
+				return "https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fthumbs.dreamstime.com%2Fz%2Ffarmer-cut-bread-knife-male-hands-slicing-homemade-harvest-time-58469722.jpg&f=1";
 			}else if(woord1.equals("boer") && woord2.equals("laat") && woord3.equals("boer")){
-				
+				return "https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fthumbs.dreamstime.com%2Fz%2Ffarmer-cut-bread-knife-male-hands-slicing-homemade-harvest-time-58469722.jpg&f=1";
 			}
 			
 			if(woord1.equals("boer") && woord2.equals("eet") && woord3.equals("brood")){
 				return "https://media.gettyimages.com/photos/farmer-eats-an-apple-as-farmers-give-food-away-to-protest-against-the-picture-id454677048";
 				
 			}else if(woord1.equals("boer") && woord2.equals("eet") && woord3.equals("man")){
-				
+				return "https://media.gettyimages.com/photos/farmer-eats-an-apple-as-farmers-give-food-away-to-protest-against-the-picture-id454677048";
 			}else if(woord1.equals("boer") && woord2.equals("eet") && woord3.equals("boer")){
+				return "https://media.gettyimages.com/photos/farmer-eats-an-apple-as-farmers-give-food-away-to-protest-against-the-picture-id454677048";
 				
 			}
 			
 			else if(woord1.equals("boer") && woord2.equals("koopt") && woord3.equals("brood")){
-				
+				return "https://c8.alamy.com/comp/KM9D0G/a-man-buys-artisan-bread-from-a-stall-at-the-award-winning-stroud-KM9D0G.jpg";
 			}else if(woord1.equals("boer") && woord2.equals("koopt") && woord3.equals("man")){
-				
+				return "https://c8.alamy.com/comp/KM9D0G/a-man-buys-artisan-bread-from-a-stall-at-the-award-winning-stroud-KM9D0G.jpg";
 			}else if(woord1.equals("boer") && woord2.equals("koopt") && woord3.equals("boer")){
-				
+				return "https://c8.alamy.com/comp/KM9D0G/a-man-buys-artisan-bread-from-a-stall-at-the-award-winning-stroud-KM9D0G.jpg";
 			}
 			
 			else if(woord1.equals("boer") && woord2.equals("snijdt") && woord3.equals("brood")){
-				
+				return "https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fthumbs.dreamstime.com%2Fz%2Ffarmer-cut-bread-knife-male-hands-slicing-homemade-harvest-time-58469722.jpg&f=1";
 			}else if(woord1.equals("boer") && woord2.equals("snijdt") && woord3.equals("man")){
-				
+				return "https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fthumbs.dreamstime.com%2Fz%2Ffarmer-cut-bread-knife-male-hands-slicing-homemade-harvest-time-58469722.jpg&f=1";
 			}else if(woord1.equals("boer") && woord2.equals("snijdt") && woord3.equals("boer")){
+				return "https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fthumbs.dreamstime.com%2Fz%2Ffarmer-cut-bread-knife-male-hands-slicing-homemade-harvest-time-58469722.jpg&f=1";
 				
 			}
 			
