@@ -1,6 +1,6 @@
 package persistence;
 
-
+import model.Zin;
 
 public class ZinDaoImpl extends OracleBaseDao implements ZinDao{
 	
@@ -49,7 +49,7 @@ public class ZinDaoImpl extends OracleBaseDao implements ZinDao{
 	}
 
 	@Override
-	public String Representatie2(String zin) {
+	public Zin Representatie2(String zin) {
 		if(checkZin(zin) == true) {
 			
 			String[] woorden = zin.split(" ");
@@ -62,9 +62,9 @@ public class ZinDaoImpl extends OracleBaseDao implements ZinDao{
 			
 			String vertaling = woord1 + " " + woord2 + " " + woord3 + " " + woord4 + " " + woord5;
 			
-			return vertaling;
+			return new Zin(zin, vertaling);
 		} else {
-			return "Zin klopt niet";
+			return null;
 		}
 	}
 

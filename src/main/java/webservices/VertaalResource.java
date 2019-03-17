@@ -8,6 +8,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.Response;
 
 import model.Lidwoord;
+import model.Zin;
 import persistence.LidwoordDao;
 import persistence.LidwoordDaoImpl;
 import persistence.ZinDao;
@@ -16,13 +17,16 @@ import persistence.ZinDaoImpl;
 @Path("/vertaal")
 public class VertaalResource {
 	
-
+	ZinDao zdao = new ZinDaoImpl();
+	
 	@POST
     @Produces("application/json")
     public Response translateSentence(@FormParam("sentence") String sentence){
+		
+		Zin vertaling = zdao.Representatie2(sentence);
     	
-    	System.out.println(sentence);
-        return Response.ok(sentence).build();
+    	System.out.println(vertaling);
+        return Response.ok(vertaling).build();
 	}
 	
 	@GET
@@ -36,13 +40,13 @@ public class VertaalResource {
 		ZinDao zdao = new ZinDaoImpl();
 		
 		//Lidwoord lidwoord = lidwoordDao.findTranslation(nederlands);
-		String zin = zdao.Representatie2(test);
+		//String zin = zdao.Representatie2(test);
 		//boolean test = lidwoordDao.exist("op");
 		//String zin = zdao.Representatie1(test);
 		
 		
     	//System.out.println(lidwoord);
-        return Response.ok(zin).build();
+        return Response.ok().build();
 	}
 	
 	
