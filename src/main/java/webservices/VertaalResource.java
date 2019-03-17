@@ -1,5 +1,7 @@
 package webservices;
 
+import java.util.ArrayList;
+
 import javax.ws.rs.FormParam;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
@@ -28,6 +30,31 @@ public class VertaalResource {
     	System.out.println(vertaling);
         return Response.ok(vertaling).build();
 	}
+	
+	@POST
+	@Path("/structuur")
+    @Produces("application/json")
+    public Response showStructure(@FormParam("sentence") String sentence){
+		
+		ArrayList<String> lijst = zdao.Representatie1(sentence);
+    	
+    	System.out.println(lijst);
+        return Response.ok(lijst).build();
+	}
+	
+	@POST
+	@Path("/image")
+    @Produces("application/json")
+    public Response showImage(@FormParam("sentence") String sentence){
+		
+		String image = zdao.Representatie3(sentence);
+    	
+		ArrayList<String> img = new ArrayList<>();
+		img.add(image);
+    	System.out.println(img);
+        return Response.ok(img).build();
+	}
+	
 	
 	@GET
     @Produces("application/json")

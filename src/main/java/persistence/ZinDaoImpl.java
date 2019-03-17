@@ -1,5 +1,7 @@
 package persistence;
 
+import java.util.ArrayList;
+
 import model.Zin;
 
 public class ZinDaoImpl extends OracleBaseDao implements ZinDao{
@@ -40,11 +42,29 @@ public class ZinDaoImpl extends OracleBaseDao implements ZinDao{
 	}
 
 	@Override
-	public String Representatie1(String zin) {
+	public ArrayList<String> Representatie1(String zin) {
 		if(checkZin(zin) == true) {
-			return zin;
+			
+			String[] woorden = zin.split(" ");
+			
+			String woord1 = woorden[0];
+			String woord2 = woorden[1];
+			String woord3 = woorden[2];
+			String woord4 = woorden[3];
+			String woord5 = woorden[4];
+			
+			ArrayList<String> list = new ArrayList<>();
+			
+			list.add(woord1);
+			list.add(woord2);
+			list.add(woord3);
+			list.add(woord4);
+			list.add(woord5);
+			
+			return list;
+			
 		} else {
-			return "zin klopt niet";
+			return null;
 		}
 	}
 
@@ -73,9 +93,15 @@ public class ZinDaoImpl extends OracleBaseDao implements ZinDao{
 		if(checkZin(zin) == true) {
 			String[] woorden = zin.split(" ");
 			
-			String woord1 = zdao.findTranslation(woorden[1]);
-			String woord2 = wdao.findTranslation(woorden[2]);
-			String woord3 = zdao.findTranslation(woorden[4]);
+			System.out.println(zin);
+			
+			String woord1 = woorden[1];
+			String woord2 = woorden[2];
+			String woord3 = woorden[4];
+			
+			System.out.println(woord1);
+			System.out.println(woord2);
+			System.out.println(woord3);
 			
 			if(woord1.equals("brood") && woord2.equals("laat") && woord3.equals("brood")) {
 				
@@ -149,7 +175,8 @@ public class ZinDaoImpl extends OracleBaseDao implements ZinDao{
 				
 			}
 			
-			else if(woord1.equals("boer") && woord2.equals("eet") && woord3.equals("brood")){
+			if(woord1.equals("boer") && woord2.equals("eet") && woord3.equals("brood")){
+				return "https://media.gettyimages.com/photos/farmer-eats-an-apple-as-farmers-give-food-away-to-protest-against-the-picture-id454677048";
 				
 			}else if(woord1.equals("boer") && woord2.equals("eet") && woord3.equals("man")){
 				
@@ -173,7 +200,7 @@ public class ZinDaoImpl extends OracleBaseDao implements ZinDao{
 				
 			}
 			
-			return zin;
+			return "Geen image beschikbaar";
 		} else {
 			return "zin klopt niet";
 		}
