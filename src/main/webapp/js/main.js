@@ -16,6 +16,13 @@ function postSentence(){
                 	rep2.appendChild(p1);
             	} else {
             		console.log("kan de zin niet vertalen");
+            		
+            		var alert = document.querySelector("#alert");
+                	
+                	var alertp = document.createElement("p");
+                	
+                	alertp.innerHTML = "Kan de zin niet vertalen";
+                	alert.appendChild(alertp);
             	}
 
             }).then(getStructure(encData)).then(getImage(encData));

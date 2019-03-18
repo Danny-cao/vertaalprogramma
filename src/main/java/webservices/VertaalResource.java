@@ -3,16 +3,12 @@ package webservices;
 import java.util.ArrayList;
 
 import javax.ws.rs.FormParam;
-import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.Response;
 
-import model.Lidwoord;
 import model.Zin;
-import persistence.LidwoordDao;
-import persistence.LidwoordDaoImpl;
 import persistence.ZinDao;
 import persistence.ZinDaoImpl;
 
@@ -54,27 +50,4 @@ public class VertaalResource {
     	System.out.println(img);
         return Response.ok(img).build();
 	}
-	
-	
-	@GET
-    @Produces("application/json")
-    public Response testGet(){
-		
-		String nederlands = "de";
-		String test = "de brood eet een man";
-		
-		LidwoordDao lidwoordDao = new LidwoordDaoImpl();
-		ZinDao zdao = new ZinDaoImpl();
-		
-		//Lidwoord lidwoord = lidwoordDao.findTranslation(nederlands);
-		//String zin = zdao.Representatie2(test);
-		//boolean test = lidwoordDao.exist("op");
-		//String zin = zdao.Representatie1(test);
-		
-		
-    	//System.out.println(lidwoord);
-        return Response.ok().build();
-	}
-	
-	
 }
