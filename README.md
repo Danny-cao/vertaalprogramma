@@ -4,7 +4,10 @@ PAFR toetsopdracht 2de gelegenheid
 # Screencast applicatie
 [Screencast](https://youtu.be/9bbb0SQJ7V0).
 
+# Documentatie
+Open het pdf bestand - Documentatie.pdf in deze github repo-
 
+# Uitleg
 **Vertaalprogramma alleen getest op firefox**
 
 Het programma krijgt als input een zin in het Nederlands en kan deze zin vertalen naar diverse representaties.
