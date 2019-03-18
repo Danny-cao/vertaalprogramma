@@ -1,6 +1,8 @@
 # vertaalprogramma
 PAFR toetsopdracht 2de gelegenheid
 
+**Vertaalprogramma alleen getest op firefox**
+
 Het programma krijgt als input een zin in het Nederlands en kan deze zin vertalen naar diverse representaties.
 
 **representatie 1:**
