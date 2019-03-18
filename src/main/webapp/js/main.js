@@ -6,13 +6,18 @@ function postSentence(){
         fetch("restservices/vertaal", { method: 'POST', body: encData })
             .then(response => response.json()).then( function(sentence){
             	
-            	var rep2 = document.querySelector("#rep2");
-            	
-            	var p1 = document.createElement("p");
-            	
-            	p1.innerHTML = sentence.engels;
-            	rep2.appendChild(p1);
-            	
+            	reset();
+            	if(sentence.nederlands !== 'zin klopt niet'){
+                	var rep2 = document.querySelector("#rep2");
+                	
+                	var p1 = document.createElement("p");
+                	
+                	p1.innerHTML = sentence.engels;
+                	rep2.appendChild(p1);
+            	} else {
+            		console.log("kan de zin niet vertalen");
+            	}
+
             }).then(getStructure(encData)).then(getImage(encData));
 	});
 } postSentence();
@@ -119,12 +124,24 @@ function getImage(data){
 		
 		console.log(image);
 		
-		var rep3 = document.querySelector("#rep3");
-		
-		var img = document.createElement("img");
-		img.src = image;
-		
-		rep3.appendChild(img);
-		
+		if(image[0] !== 'zin klopt niet'){
+			var rep3 = document.querySelector("#rep3");
+			
+			var img = document.createElement("img");
+			img.src = image;
+			
+			rep3.appendChild(img);
+		}
 	});
+}
+
+function reset(){
+	
+	var rep1 = document.querySelector("#rep1row");
+	var rep2 = document.querySelector("#rep2");
+	var rep3 = document.querySelector("#rep3");
+	
+	rep1.innerHTML = "";
+	rep2.innerHTML = "";
+	rep3.innerHTML = "";
 }

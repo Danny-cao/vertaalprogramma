@@ -84,7 +84,7 @@ public class ZinDaoImpl extends OracleBaseDao implements ZinDao{
 			
 			return new Zin(zin, vertaling);
 		} else {
-			return null;
+			return new Zin("zin klopt niet", "zin klopt niet");
 		}
 	}
 
