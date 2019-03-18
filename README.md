@@ -17,12 +17,12 @@ Het programma krijgt als input een zin in het Nederlands en kan deze zin vertale
 
 ## Ondersteunde grammatica:
 
-<eenvoudige zin> ::= <naamwoordelijkdeel> <werkwoordelijk deel> <naamwoordelijk deel> 
+eenvoudige zin = <naamwoordelijkdeel> <werkwoordelijk deel> <naamwoordelijk deel> 
   
-<naamwoordelijk deel> ::= <lidwoord> <zelfstandig naamwoord> 
+naamwoordelijk deel = <lidwoord> <zelfstandig naamwoord> 
   
-<zelfstandig naamwoord> ::= brood | man | boer
+zelfstandig naamwoord = brood | man | boer
 
-<lidwoord> ::= de | het | een
+lidwoord = de | het | een
 
-<werkwoordelijk deel> ::= laat | eet | koopt | snijdt
+werkwoordelijk deel = laat | eet | koopt | snijdt
