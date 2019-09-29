@@ -1,5 +1,5 @@
 # vertaalprogramma
-PAFR toetsopdracht 2de gelegenheid
+Een applicatie die een nederlandse zin vertaalt in het engels met daarbij verschillende representaties.
 
 # Screencast applicatie
 [Screencast](https://youtu.be/9bbb0SQJ7V0).
